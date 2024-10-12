@@ -30,7 +30,7 @@ public class Student {
     }//Constructor without parameters for student which not undefined yet, and can be initialized via setter
 
 
-//Getter&Setter for NAME
+//Getter & Setter for NAME
 
     public String getName() {
         return name;
