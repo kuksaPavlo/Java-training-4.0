@@ -38,8 +38,8 @@ public class ContractedEmployee extends Employee{
     }
 
     @Override
-    public double calculatePay() {
-        return averageMonthlySalary = hourlyRate * numberOfHoursWorked;
+    public void calculatePay() {
+        averageMonthlySalary = hourlyRate * numberOfHoursWorked;
     }
     // TODO fill in code here
 }

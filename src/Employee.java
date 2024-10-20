@@ -38,7 +38,6 @@ abstract class Employee implements Payable {
     }
 
     @Override
-    public double calculatePay() {
-        return averageMonthlySalary;
+    public void calculatePay() {
     }
 }

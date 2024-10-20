@@ -1,3 +1,3 @@
 interface Payable {
-    double calculatePay();
+    void calculatePay();
 }

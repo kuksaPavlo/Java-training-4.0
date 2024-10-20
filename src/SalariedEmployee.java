@@ -27,7 +27,7 @@ public class SalariedEmployee extends Employee{
     }
 
     @Override
-    public double calculatePay() {
-        return averageMonthlySalary = fixedMonthlyPayment;
+    public void calculatePay() {
+        averageMonthlySalary = fixedMonthlyPayment;
     }// TODO fill in code here
 }
