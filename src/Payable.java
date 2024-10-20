@@ -1,3 +1,5 @@
 interface Payable {
-    // TODO declare method here
+    public void calculatePay(){
+
+    }// TODO declare method here
 }
