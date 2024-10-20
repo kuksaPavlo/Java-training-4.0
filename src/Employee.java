@@ -1,4 +1,4 @@
-public class Employee implements Payable {
+abstract class Employee implements Payable {
     // TODO fix class declaration and declare variables here
     String employeeId;
     String name;
@@ -7,6 +7,7 @@ public class Employee implements Payable {
         this.employeeId =  employeeId;// TODO fill in code here
         this.name = name;
     }
+
 
     public String getEmployeeId() {
         return employeeId;// TODO fill in code here and replace the return statement
@@ -26,13 +27,18 @@ public class Employee implements Payable {
     }
 
     public double getAverageMonthlySalary() {
-        averageMonthlySalary =  * ContractedEmployee(numberOfHoursWorked);// TODO fill in code here and replace the return statement
-        return 0;
+        // TODO fill in code here and replace the return statement
+        return averageMonthlySalary;
     }
 
     @Override
     public String toString() {
         // TODO fill in code here and replace the return statement, be sure to format double value
-        return "";
+        return "Employee ID: " + employeeId + ", Name: " + name + ", Average Monthly Salary: $" + String.format("%.2f", averageMonthlySalary);
+    }
+
+    @Override
+    public double calculatePay() {
+        return averageMonthlySalary;
     }
 }

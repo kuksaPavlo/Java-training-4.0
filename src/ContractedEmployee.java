@@ -1,15 +1,17 @@
-public class ContractedEmployee extends E{
+public class ContractedEmployee extends Employee{
     // TODO fix class declaration and declare variables here
+
     String federalTaxId;
     double hourlyRate;
-    double numberOfHoursWorked;
+    public double numberOfHoursWorked;
+    private double getHourlyRate;
 
     public ContractedEmployee(String employeeId, String name, String federalTaxId) {
-        super(name);// TODO fill in code here
+        super(employeeId, name);
+        this.federalTaxId = federalTaxId;// TODO fill in code here
     }
 
     public String getFederalTaxId() {
-        // TODO fill in code here and replace the return statement
         return federalTaxId;
     }
 
@@ -19,7 +21,7 @@ public class ContractedEmployee extends E{
 
     public double getHourlyRate() {
         // TODO fill in code here and replace the return statement
-        return getHourlyRate;
+        return hourlyRate;
     }
 
     public void setHourlyRate(double hourlyRate) {
@@ -35,6 +37,9 @@ public class ContractedEmployee extends E{
         this.numberOfHoursWorked = numberOfHoursWorked;// TODO fill in code here
     }
 
-
+    @Override
+    public double calculatePay() {
+        return averageMonthlySalary = hourlyRate * numberOfHoursWorked;
+    }
     // TODO fill in code here
 }

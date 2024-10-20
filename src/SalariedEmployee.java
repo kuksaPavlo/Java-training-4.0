@@ -1,12 +1,10 @@
 public class SalariedEmployee extends Employee{
     // TODO fix class declaration and declare variables here
-    String employeeId;
-    String name;
+
     String socialSecurityNumber;
     double fixedMonthlyPayment;
     public SalariedEmployee(String employeeId, String name, String socialSecurityNumber) {
-        this.employeeId =  employeeId;
-        this.name = name;
+        super(employeeId,name);
         this.socialSecurityNumber = socialSecurityNumber;// TODO fill in code here
     }
 
@@ -28,5 +26,8 @@ public class SalariedEmployee extends Employee{
         this.fixedMonthlyPayment = fixedMonthlyPayment;// TODO fill in code here
     }
 
-    // TODO fill in code here
+    @Override
+    public double calculatePay() {
+        return averageMonthlySalary = fixedMonthlyPayment;
+    }// TODO fill in code here
 }
